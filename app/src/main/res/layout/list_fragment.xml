@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linear"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/blue"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1.7"
+                android:src="@drawable/back"
+                android:id="@+id/back"
+                android:layout_gravity="center|start"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:text="Checklist"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:layout_weight=".3"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_gravity="center|start"
+                android:textColor="@color/white"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/linear1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="7dp"
+                android:background="@color/white"
+                android:translationZ="1dp"
+                android:elevation="1dp"
+                android:weightSum="3"
+                android:translationX="1dp"
+                android:gravity="center"
+                android:layout_height="50sp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/edit"
+                    android:contentDescription="@null"
+                    android:layout_height="40dp" />
+
+
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/edit"
+                    android:layout_gravity="start"
+                    android:contentDescription="@null"
+                    android:layout_height="40dp" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Room Checklist"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/edit"
+                    android:layout_gravity="start"
+                    android:contentDescription="@null"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/linear2"
+                android:layout_marginBottom="7dp"
+                android:background="@color/white"
+                android:translationZ="1dp"
+                android:elevation="1dp"
+                android:translationX="1dp"
+                android:gravity="center"
+                android:layout_height="50sp">
+
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_weight=".5"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Front Office Checklist"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:id="@+id/linear3"
+                android:layout_marginBottom="7dp"
+                android:background="@color/white"
+                android:translationZ="1dp"
+                android:elevation="1dp"
+                android:translationX="1dp"
+                android:gravity="center"
+                android:layout_height="50sp">
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_weight=".5"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:text="Security Checklist"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/linear4"
+                android:layout_marginBottom="7dp"
+                android:background="@color/white"
+                android:translationZ="1dp"
+                android:elevation="1dp"
+                android:translationX="1dp"
+                android:gravity="center"
+                android:layout_height="50sp">
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_weight=".5"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:text="Food and Beverage Checklist"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/linear5"
+                android:layout_marginBottom="7dp"
+                android:background="@color/white"
+                android:translationZ="1dp"
+                android:elevation="1dp"
+                android:translationX="1dp"
+                android:gravity="center"
+                android:layout_height="50sp">
+
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_weight=".5"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:text="Laundary Checklist"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/linear6"
+                android:layout_marginBottom="7dp"
+                android:background="@color/white"
+                android:translationZ="1dp"
+                android:elevation="1dp"
+                android:translationX="1dp"
+                android:gravity="center"
+                android:layout_height="50sp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_weight=".5"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:text="Lobby Checklist"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+</LinearLayout>

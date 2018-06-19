@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="60dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Thank You!"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="24sp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:id="@+id/txt_msg"
+                            android:layout_gravity="center"
+                            android:text="Your Checklist has been submitted
+     successfully"/>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:text="DONE"
+                            android:typeface="serif"
+                            android:id="@+id/submit_btn"
+                            android:layout_marginTop="30dp"
+                            android:textColor="@color/white"
+                            android:background="@color/blue"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="5dp"
+
+               android:contentDescription="@null"
+            android:background="@drawable/white_shadow"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/dialog_check" />
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_img"
+    android:id="@+id/root_view"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/lnr"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/loginicon"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:layout_below="@+id/lnr"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_weight="1"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:alpha=".7"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="@string/email_id"
+                android:drawableLeft="@drawable/email_icon"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:typeface="serif"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/checklist_round_corner_button"
+                android:digits="0,1,2,3,4,5,6,7,8,9,@,.,qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:alpha="0.7"
+           android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+               android:background="@drawable/checklist_round_corner_button"
+                android:paddingLeft="10dp"
+                android:hint="@string/password"
+                android:clickable="true"
+                android:typeface="serif"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/lock_icon"
+                android:imeActionId="@+id/login"
+                android:inputType="textPassword"
+                android:maxEms="10"
+                android:imeOptions="actionDone"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:text="@string/login"
+                android:gravity="center"
+                android:background="@color/blue"
+                android:textColor="@color/white"
+                android:typeface="serif"
+                android:layout_gravity="center"
+                android:id="@+id/login_btn"
+                android:layout_height="40dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:id="@+id/forget"
+                android:text="@string/forget"
+                android:gravity="end"
+                android:typeface="serif"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/blue"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
